@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Values";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@model System.Collections.Generic.List<MvcProjeKamp.Controllers.Values>
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>@item.Id</li>
+        <li>@item.Value</li>
+        <li>@item.Date</li>
+    </ul>
+}
+
